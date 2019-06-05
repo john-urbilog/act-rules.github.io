@@ -1,6 +1,8 @@
 
 const describeRule = require('./utils/describe-rule')
 const { contributors } = require('./../package.json')
+const clc = require("cli-color");
+
 const contributorsNames = contributors.map(contributor => contributor.name.toLowerCase())
 
 describeRule('frontmatter', (ruleData) => {
@@ -20,6 +22,7 @@ describeRule('frontmatter', (ruleData) => {
   ]
   test.each(requiredProps)('has required property `%s`',
     (requiredProp) => {
+      console.log(clc.red.bgWhite.underline("Underlined red text on white background."));
       expect(frontmatter).toHaveProperty(requiredProp);
     })
 
@@ -38,7 +41,7 @@ describeRule('frontmatter', (ruleData) => {
       expect(frontmatter).not.toHaveProperty('input_rules');
     })
   }
-  
+
   /**
    * Check if listed `authors` have meta data as contributors in package.json
    */
