@@ -27,7 +27,7 @@ The `lang` and `xml:lang` attributes of the test target have a [valid language s
 
 ## Assumptions
 
-This rule assumes that the presence of a lang or xml:lang attribute is being used to comply to WCAG. This rule doesn't test if the attribute is needed to comply to WCAG.
+This rule assumes that the  lang or xml:lang attribute is present in order to specify the language of the text contained within the scope tag in which the attribute is used, as required by WCAG. This rule can test whether the element might contain text.  It doesn't test whether or not there is text present in the element, and if there is text, it doesn't test whether the use of a language attribute is necessary.
 
 ## Accessibility Support
 
