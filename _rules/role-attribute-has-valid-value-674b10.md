@@ -31,7 +31,7 @@ Each test target has a valid value that corresponds to a non-abstract [WAI-ARIA]
 
 ## Assumptions
 
-- The ARIA `role` is being used to comply to WCAG.
+The rule assumes that the use of an ARIA `role` is necessary to rendre the element or content accessible.  The necessity of this role as well as its correct usage in the local context are not checked.   It is assumed to be deployed to ensure WCAG compliance.
 
 ## Accessibility Support
 
