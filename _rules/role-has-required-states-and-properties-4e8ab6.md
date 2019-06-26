@@ -30,7 +30,7 @@ For each test target, the [WAI-ARIA required states and properties](https://www.
 
 - The applicability of this rule is limited to [explicit semantic roles](#semantic-role) based on an assumption that all native HTML and SVG elements have native attributes that are mapped to all of the [required states and properties](https://www.w3.org/TR/wai-aria/#requiredState) for the [implicit semantic role](#semantic-role) of the element.
 
-- The ARIA `role` is being used to comply to WCAG.
+- The rule assumes the `role` is necessary in the context in order to comply with WCAG.  This necessity is not checked by the rule. 
 
 ## Accessibility Support
 
